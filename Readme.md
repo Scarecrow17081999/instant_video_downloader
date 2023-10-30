@@ -1,1 +1,1 @@
-[App Image](/public/instant-video-downloader.png)
+![App Image](instant-video-downloader.png)
