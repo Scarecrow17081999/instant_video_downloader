@@ -1,0 +1,107 @@
+$myShadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+#videoPreviewMainContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+  > div {
+    margin: 0 2rem;
+  }
+  .cardPreview {
+    > button,
+    video {
+      width: 30vh;
+    }
+  }
+}
+
+.cardLinks {
+  box-shadow: $myShadow;
+  > h2 {
+    text-align: center;
+    font-weight: 600;
+  }
+  background-color: rgba(255, 255, 255, 0.431);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  > button {
+    width: 100%;
+    font-size: 1rem;
+    background: transparent !important;
+    border: 1px solid #171941a9;
+    color: #171941a9;
+    padding: 0.5rem 4rem !important;
+    margin: 1rem 0 !important;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  > a {
+    > button {
+      transition: all 0.3s ease-in-out;
+      width: 100%;
+      font-size: 1rem;
+
+      background-color: #171941a9;
+      color: #ffffff;
+      padding: 0.5rem 4rem !important;
+      margin: 1rem 0 !important;
+      border-radius: 8px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.downloadButton {
+  &:hover {
+    background-color: #171941d3;
+  }
+}
+
+@media all and (max-width: 786px) and (min-width: 450px) {
+  #videoPreviewMainContainer {
+    flex-direction: column;
+    > div:first-child {
+      margin-bottom: 2rem;
+      width: 60%;
+      > button {
+        width: 100% !important;
+      }
+
+      video {
+        width: 100% !important;
+        // border: 1px solid red;
+      }
+    }
+    > div:last-child {
+      width: 60%;
+    }
+  }
+}
+@media all and (max-width: 450px) {
+  #videoPreviewMainContainer {
+    flex-direction: column;
+    > div:first-child {
+      margin-bottom: 2rem;
+      width: 80%;
+
+      video {
+        width: 100% !important;
+      }
+    }
+    > div:last-child {
+      width: 80%;
+      > button {
+        padding: 0.5rem 1rem !important;
+      }
+      a > button {
+        padding: 0.5rem 1rem !important;
+      }
+    }
+  }
+}

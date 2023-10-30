@@ -1,0 +1,31 @@
+$myBackground: #ffffffa1;
+$myBackground-darker: #f7f7f782;
+#ratingsMainContainer {
+  color: $myBackground;
+
+  > div {
+    > * {
+      margin: 1rem 0;
+    }
+  }
+  font-size: 2rem;
+}
+
+.ratingsContainer {
+  margin-bottom: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  > p {
+    width: 70%;
+    text-align: center;
+    font-size: 1rem;
+  }
+}

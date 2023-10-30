@@ -1,0 +1,78 @@
+$myTextColor: #2f2f2fe0;
+
+.accordianMianContainer {
+  display: flex;
+  > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    > svg {
+      // margin-top: 3.3rem;
+      // margin-left: -10%;
+      margin-right: 5%;
+      font-size: 4rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    // @media screen and (max-width: 1330px) {
+    //   flex-direction: column;
+    //   > svg {
+    //     margin-top: 3.3rem;
+    //   }
+    // }
+
+    > * {
+      color: $myTextColor;
+    }
+  }
+  > div {
+    width: 50%;
+  }
+  h1 {
+    width: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    > div:first-child {
+      width: 100%;
+    }
+    > div:last-child {
+      width: 100%;
+      margin-top: 3rem;
+      text-align: left;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+
+    > div:first-child {
+      width: 100%;
+      flex-direction: column;
+      // border: 1px solid red;
+      align-items: center;
+      > h1 {
+        width: 100%;
+        text-align: center;
+      }
+      > svg {
+        // border: 1px solid red;
+        width: 100%;
+        width: fit-content;
+        align-items: flex-start;
+        margin-left: 0rem;
+        order: 2;
+      }
+    }
+    > div:last-child {
+      width: 100%;
+      margin-top: 3rem;
+      text-align: left;
+    }
+  }
+}

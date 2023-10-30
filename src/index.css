@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #171941;
+  /* background-color: #292a43; */
+  /* background-color: #181818; */
+  /* background-color: #1b1b1b; */
+
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-image: radial-gradient(
+    rgba(225, 225, 225, 0.02) 1px,
+    transparent 0
+  );
+  background-size: 40px 40px;
+  /* background-attachment: fixed; */
+  z-index: 0;
+}
+.loader {
+  margin: 10rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mySpinner {
+  background-color: transparent;
+}
+/* .selected-tab {
+  > * {
+    color: #0b94ff !important;
+  }
+  transition: all 0.25s ease-in-out;
+} */
+.MuiSvgIcon-root {
+  font-size: 1rem;
+}
+footer > *,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-weight: 400 !important;
+}
+/* @media screen and (min-width: 768px) {
+
+  #myDrawer {
+    display: none !important;
+  }
+} */

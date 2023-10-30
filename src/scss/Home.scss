@@ -1,0 +1,14 @@
+#homepageLayoutMainContainer {
+  overflow-x: hidden;
+  > div {
+    padding: 0% 5%;
+  }
+  margin: auto;
+  > div:not(:last-child) {
+    margin: 0;
+  }
+  > div:last-child {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}

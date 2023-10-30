@@ -1,0 +1,19 @@
+#footerIconContainer {
+  @media all and (max-width: 786px) and (min-width: 450px) {
+    > a {
+      margin-right: 2rem;
+    }
+  }
+  @media all and (max-width: 450px) {
+    > a {
+      margin-right: 1rem;
+    }
+  }
+}
+footer > div > div > div {
+  margin: auto;
+  text-align: center;
+}
+footer#contacts {
+  padding-bottom: 0;
+}
